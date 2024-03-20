@@ -14,7 +14,7 @@ function playGame(playerMove){
         }
 
 
-alert(`You picked Paper , computer picked ${computerMove} ,${result}`);
+alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}`);
 }
  
  function getComputerMove(){
