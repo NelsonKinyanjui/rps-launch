@@ -1,3 +1,22 @@
+function playGame(playerMove){
+    const computerMove = getComputerMove();
+        
+        let result = '';
+
+        if (computerMove === 'rock'){
+            result = 'You Win.';
+        }
+        else if (computerMove === 'paper'){
+            result = 'You Tie.';
+        }
+        else if (computerMove === 'scissors'){
+            result = 'You Lose.';
+        }
+
+
+alert(`You picked Paper , computer picked ${computerMove} ,${result}`);
+}
+ 
  function getComputerMove(){
     let randomNumber = Math.random();
 
@@ -15,3 +34,5 @@
 
     return computerMove;
  }
+
+ 
