@@ -24,7 +24,7 @@ function playGame(playerMove){
             result = 'You Lose.';
         }
     }
-    else if (playerMove === 'Scissors'){
+    else if (playerMove === 'scissors'){
         if (computerMove === 'rock'){
             result = 'You Lose.';
         }
