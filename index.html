@@ -8,57 +8,13 @@
 <body>
 
     <button onclick="
-    const computerMove = getComputerMove();
-    let result = '';
-
-if (computerMove === 'rock'){
-    result = 'You Tie.';
-}
-else if (computerMove === 'paper'){
-    result = 'You Lose.';
-}
-else if (computerMove === 'scissors'){
-    result = 'You Win.';
-}
-
-
-alert(`You picked Rock , computer picked ${computerMove} ,${result}`);
+     playGame('rock');
     ">Rock</button>
     <button onclick="
-        const computerMove = getComputerMove();
-        
-        let result = '';
-
-        if (computerMove === 'rock'){
-            result = 'You Win.';
-        }
-        else if (computerMove === 'paper'){
-            result = 'You Tie.';
-        }
-        else if (computerMove === 'scissors'){
-            result = 'You Lose.';
-        }
-
-
-alert(`You picked Paper , computer picked ${computerMove} ,${result}`);
+         playGame('paper');
     ">Paper</button>
     <button onclick="
-        const computerMove = getComputerMove();
-        
-        let result = '';
-
-        if (computerMove === 'rock'){
-            result = 'You Lose.';
-        }
-        else if (computerMove === 'paper'){
-            result = 'You Wins.';
-        }
-        else if (computerMove === 'scissors'){
-            result = 'You Tie.';
-        }
-
-
-alert(`You picked Scissors , computer picked ${computerMove} ,${result}`);
+         playGame('scissors');
     ">Scissors</button>
     
     <script src="./assets/launch.js"></script>
