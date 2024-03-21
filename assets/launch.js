@@ -2,7 +2,18 @@ function playGame(playerMove){
     const computerMove = getComputerMove();
         
         let result = '';
-
+    if (playerMove === 'rock'){
+        if (computerMove === 'rock'){
+            result = 'You Tie.';
+        }
+        else if (computerMove === 'paper'){
+            result = 'You Lose.';
+        }
+        else if (computerMove === 'scissors'){
+            result = 'You Win.';
+        }
+    }
+    else if (playerMove === 'paper'){
         if (computerMove === 'rock'){
             result = 'You Win.';
         }
@@ -12,6 +23,19 @@ function playGame(playerMove){
         else if (computerMove === 'scissors'){
             result = 'You Lose.';
         }
+    }
+    else if (playerMove === 'Scissors'){
+        if (computerMove === 'rock'){
+            result = 'You Lose.';
+        }
+        else if (computerMove === 'paper'){
+            result = 'You Win.';
+        }
+        else if (computerMove === 'scissors'){
+            result = 'You Tie.';
+        }
+    }
+        
 
 
 alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}`);
