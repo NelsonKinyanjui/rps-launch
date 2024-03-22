@@ -57,14 +57,15 @@ function playGame(playerMove){
         
 
 
-// alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}
-// wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`);
+//  alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}
+//  wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`);
 
-let display = document.querySelector('.display');
-let para = document.querySelector('p');
-para.textContent = `You picked ${playerMove} , computer picked ${computerMove} ,${result}
-wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`;
-display.appendChild(para);
+    let display = document.querySelector('.display');
+    let para = document.querySelector('p');
+    para.textContent = `You picked ${playerMove} , computer picked ${computerMove} ,${result}
+    wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`;
+    display.appendChild(para);
+
 }
 function resetScore (){
     score.wins = 0;
@@ -74,21 +75,21 @@ function resetScore (){
 
  
  function getComputerMove(){
-    let randomNumber = Math.random();
+        let randomNumber = Math.random();
 
-    let computerMove = '';
-    
-    if(randomNumber > 0 && randomNumber < 1 / 3){
-        computerMove = 'rock';
-    }
-    else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
-        computerMove = 'paper';
-    }
-     else if(randomNumber >= 2 / 3 && randomNumber < 1 ){
-        computerMove = 'scissors';
-    }
+        let computerMove = '';
+        
+        if(randomNumber > 0 && randomNumber < 1 / 3){
+            computerMove = 'rock';
+        }
+        else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3){
+            computerMove = 'paper';
+        }
+        else if(randomNumber >= 2 / 3 && randomNumber < 1 ){
+            computerMove = 'scissors';
+        }
 
-    return computerMove;
- }
+        return computerMove;
+    }
 
  
