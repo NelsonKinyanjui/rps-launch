@@ -46,7 +46,7 @@ function playGame(playerMove){
     if(result === 'You Win.'){
         score.wins += 1;
     }
-    else if (result === 'You Loose.'){
+    else if (result === 'You Lose.'){
         score.losses  += 1;
     }
     else if (result === 'You Tie.'){
@@ -60,6 +60,12 @@ function playGame(playerMove){
 alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}
 wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`);
 }
+function resetScore (){
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+}
+
  
  function getComputerMove(){
     let randomNumber = Math.random();
