@@ -57,8 +57,14 @@ function playGame(playerMove){
         
 
 
-alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}
-wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`);
+// alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}
+// wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`);
+
+let display = document.querySelector('.display');
+let para = document.querySelector('p');
+para.textContent = `You picked ${playerMove} , computer picked ${computerMove} ,${result}
+wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`;
+display.appendChild(para);
 }
 function resetScore (){
     score.wins = 0;
