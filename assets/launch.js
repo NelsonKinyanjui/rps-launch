@@ -1,3 +1,10 @@
+const score = {
+    wins: 0,
+    losses: 0,
+    ties: 0
+
+}
+
 function playGame(playerMove){
     const computerMove = getComputerMove();
         
