@@ -42,10 +42,23 @@ function playGame(playerMove){
             result = 'You Tie.';
         }
     }
+
+    if(result === 'You Win.'){
+        score.wins += 1;
+    }
+    else if (result === 'You Loose.'){
+        score.losses  += 1;
+    }
+    else if (result === 'You Tie.'){
+
+        score.ties += 1;
+
+    }
         
 
 
-alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}`);
+alert(`You picked ${playerMove} , computer picked ${computerMove} ,${result}
+wins ${score.wins} , losses ${score.losses} , ties ${score.ties}`);
 }
  
  function getComputerMove(){
